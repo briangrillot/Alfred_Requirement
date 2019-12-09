@@ -2,11 +2,11 @@
 
 ### Diagramme Requirement
 
-![Alt text](https://github.com/briangrillot/Alfred_Requirement/tree/master/img/Alfred_req.PNG)
+![Alt text](./img/Alfred_req.PNG)
 
 ### Diagramme User Case
 
-![Alt text](https://github.com/briangrillot/Alfred_Requirement/tree/master/img/Alfred_UC.PNG)
+![Alt text](./img/Alfred_UC.PNG)
 
 Pour ce diagramme on a place Alfred en tant qu'acteur principale, et on a pris comme action
 "Mesurer le taux de CO2" et "Mesurer le taux de COV", ces actions permettent de préserver la
@@ -16,7 +16,7 @@ permettant respectivement de "regler la temperature" et "regler l'aération".
 
 ### Diagramme de blocs (BDD)
 
-![Alt text](https://github.com/briangrillot/Alfred_Requirement/tree/master/img/Alfred_BDD.PNG)
+![Alt text](./img/Alfred_BDD.PNG)
 
 Pour ce diagramme on est parti d'un bloc representant le système souhaité ("Systeme"), ce block est composée
 des capteurs et des indicateurs. On a representé les elements dont on a besoin pour utiliser les indicateurs en tant que
