@@ -159,6 +159,19 @@
       <ownedEnd xmi:type="uml:Property" xmi:id="__8LncBqEEeqvqeWohp6kdg" name="voiture" type="_39ujIBqEEeqvqeWohp6kdg" association="__8IkIBqEEeqvqeWohp6kdg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_93qDkBqHEeqvqeWohp6kdg" name="Système"/>
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_PYgZQBqKEeqvqeWohp6kdg" name="Interaction36"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_YKIKcBqLEeqvqeWohp6kdg" name="Maison">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_AXN5cBqMEeqvqeWohp6kdg" name="affichage temperature">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_Cqp7sBqMEeqvqeWohp6kdg" name="temperature"/>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_CVpVABqMEeqvqeWohp6kdg" name="affichage humidité">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_CCMNgBqMEeqvqeWohp6kdg" name="aeration"/>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_AvLtgBqMEeqvqeWohp6kdg" name="affichage CO2"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_BCcAsBqMEeqvqeWohp6kdg" name="affichage COV">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_BrHxUBqMEeqvqeWohp6kdg" name="air"/>
+      </nestedClassifier>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_K8nj8BpiEeqvqeWohp6kdg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_K8oLABpiEeqvqeWohp6kdg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
@@ -231,4 +244,12 @@
   <Blocks:Block xmi:id="_UvX_ABqEEeqvqeWohp6kdg" base_Class="_UvU7sBqEEeqvqeWohp6kdg"/>
   <Blocks:Block xmi:id="_39wYUBqEEeqvqeWohp6kdg" base_Class="_39ujIBqEEeqvqeWohp6kdg"/>
   <Blocks:Block xmi:id="_93vjIBqHEeqvqeWohp6kdg" base_Class="_93qDkBqHEeqvqeWohp6kdg"/>
+  <Requirements:Requirement xmi:id="_YKQtUBqLEeqvqeWohp6kdg" base_NamedElement="_YKIKcBqLEeqvqeWohp6kdg" id="1" text="Maison controlée grace a Alfred" base_Class="_YKIKcBqLEeqvqeWohp6kdg"/>
+  <Requirements:Requirement xmi:id="_AXV1QBqMEeqvqeWohp6kdg" base_NamedElement="_AXN5cBqMEeqvqeWohp6kdg" id="2" text="Mesure de la temperature" base_Class="_AXN5cBqMEeqvqeWohp6kdg"/>
+  <Requirements:Requirement xmi:id="_AvU3cBqMEeqvqeWohp6kdg" base_NamedElement="_AvLtgBqMEeqvqeWohp6kdg" id="3" text="Mesure du taux de CO2" base_Class="_AvLtgBqMEeqvqeWohp6kdg"/>
+  <Requirements:Requirement xmi:id="_BCd14BqMEeqvqeWohp6kdg" base_NamedElement="_BCcAsBqMEeqvqeWohp6kdg" id="4" text="Mesure du taux de COV" base_Class="_BCcAsBqMEeqvqeWohp6kdg"/>
+  <Requirements:Requirement xmi:id="_BrOfABqMEeqvqeWohp6kdg" base_NamedElement="_BrHxUBqMEeqvqeWohp6kdg" id="7" text="preserver la qualité de l'air" base_Class="_BrHxUBqMEeqvqeWohp6kdg"/>
+  <Requirements:Requirement xmi:id="_CCRGABqMEeqvqeWohp6kdg" base_NamedElement="_CCMNgBqMEeqvqeWohp6kdg" id="8" text="réglage de l'aeration" base_Class="_CCMNgBqMEeqvqeWohp6kdg"/>
+  <Requirements:Requirement xmi:id="_CVtmcBqMEeqvqeWohp6kdg" base_NamedElement="_CVpVABqMEeqvqeWohp6kdg" id="5" text="Mesure du taux d'humidité" base_Class="_CVpVABqMEeqvqeWohp6kdg"/>
+  <Requirements:Requirement xmi:id="_CqwCUBqMEeqvqeWohp6kdg" base_NamedElement="_Cqp7sBqMEeqvqeWohp6kdg" id="6" text="réglage de la temperature" base_Class="_Cqp7sBqMEeqvqeWohp6kdg"/>
 </xmi:XMI>
