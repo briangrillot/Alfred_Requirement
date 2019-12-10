@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:PortsAndFlows="http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements">
   <uml:Model xmi:id="_K7dtYBpiEeqvqeWohp6kdg" name="Alfred">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_K_SdcBpiEeqvqeWohp6kdg">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
@@ -67,9 +67,7 @@
       <packagedElement xmi:type="uml:Class" xmi:id="_ugZAoBpxEeqvqeWohp6kdg" name="Température">
         <ownedOperation xmi:type="uml:Operation" xmi:id="_i2jk0BpzEeqvqeWohp6kdg" name="mesurer"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_AW6WQBpyEeqvqeWohp6kdg" name="Système">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_N0ECcBpzEeqvqeWohp6kdg" name="Indicateurs"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_rdi94Bp1EeqvqeWohp6kdg" name="Capteur"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_AW6WQBpyEeqvqeWohp6kdg" name="Capteur">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_4YNdghp1EeqvqeWohp6kdg" name="température" type="_ugZAoBpxEeqvqeWohp6kdg" aggregation="composite" association="_4YM2cBp1EeqvqeWohp6kdg">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4YOEkBp1EeqvqeWohp6kdg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4YOEkRp1EeqvqeWohp6kdg" value="1"/>
@@ -78,10 +76,6 @@
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8Y654xp1EeqvqeWohp6kdg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8Y655Bp1EeqvqeWohp6kdg" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_86DRABp1EeqvqeWohp6kdg" name="humidité" type="_5NrX0BpzEeqvqeWohp6kdg" aggregation="composite" association="_86CC4Bp1EeqvqeWohp6kdg">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_86DRARp1EeqvqeWohp6kdg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_86DRAhp1EeqvqeWohp6kdg" value="1"/>
-        </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_9SMrQhp1EeqvqeWohp6kdg" name="electricité" type="_4uJtwBp0EeqvqeWohp6kdg" aggregation="composite" association="_9SMEMBp1EeqvqeWohp6kdg">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9SMrQxp1EeqvqeWohp6kdg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9SMrRBp1EeqvqeWohp6kdg" value="1"/>
@@ -89,6 +83,10 @@
         <ownedAttribute xmi:type="uml:Property" xmi:id="_Yo3ZEhqEEeqvqeWohp6kdg" name="eau" type="_UvU7sBqEEeqvqeWohp6kdg" aggregation="composite" association="_Yo2K8BqEEeqvqeWohp6kdg">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Yo4AIBqEEeqvqeWohp6kdg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Yo4nMBqEEeqvqeWohp6kdg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_HVK6QBthEeqid8XKGmIByA" name="humidité" type="_5NrX0BpzEeqvqeWohp6kdg" aggregation="composite" association="_HU7psBthEeqid8XKGmIByA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HVLhUBthEeqid8XKGmIByA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HVMIYBthEeqid8XKGmIByA" value="1"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Actor" xmi:id="_2A4EoBpzEeqvqeWohp6kdg" name="Alfred"/>
@@ -111,6 +109,13 @@
         <ownedOperation xmi:type="uml:Operation" xmi:id="_6-0VkBqEEeqvqeWohp6kdg" name="charger"/>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_PJKvABqFEeqvqeWohp6kdg" name="calculer de capacité de deplacement"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_2idyEBtgEeqid8XKGmIByA" name="Systeme d'Alfred">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_N0ECcBpzEeqvqeWohp6kdg" name="Indicateurs"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_IDDT8hthEeqid8XKGmIByA" name="capteur" type="_AW6WQBpyEeqvqeWohp6kdg" aggregation="composite" association="_IDCs4BthEeqid8XKGmIByA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IDD7ABthEeqid8XKGmIByA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IDD7ARthEeqid8XKGmIByA" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_4YM2cBp1EeqvqeWohp6kdg" memberEnd="_4YNdghp1EeqvqeWohp6kdg _4YOEkhp1EeqvqeWohp6kdg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4YNdgBp1EeqvqeWohp6kdg" source="org.eclipse.papyrus">
@@ -124,27 +129,11 @@
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_8Y655Rp1EeqvqeWohp6kdg" name="système" type="_AW6WQBpyEeqvqeWohp6kdg" association="_8Y6S0Bp1EeqvqeWohp6kdg"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_86CC4Bp1EeqvqeWohp6kdg" memberEnd="_86DRABp1EeqvqeWohp6kdg _86D4EBp1EeqvqeWohp6kdg">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_86Cp8Bp1EeqvqeWohp6kdg" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_86Cp8Rp1EeqvqeWohp6kdg" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_86D4EBp1EeqvqeWohp6kdg" name="système" type="_AW6WQBpyEeqvqeWohp6kdg" association="_86CC4Bp1EeqvqeWohp6kdg"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_9SMEMBp1EeqvqeWohp6kdg" memberEnd="_9SMrQhp1EeqvqeWohp6kdg _9SMrRRp1EeqvqeWohp6kdg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9SMrQBp1EeqvqeWohp6kdg" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9SMrQRp1EeqvqeWohp6kdg" key="nature" value="UML_Nature"/>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_9SMrRRp1EeqvqeWohp6kdg" name="système" type="_AW6WQBpyEeqvqeWohp6kdg" association="_9SMEMBp1EeqvqeWohp6kdg"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_CjCSwBp2EeqvqeWohp6kdg" memberEnd="_CjDg4Bp2EeqvqeWohp6kdg _CjDg4xp2EeqvqeWohp6kdg" navigableOwnedEnd="_CjDg4Bp2EeqvqeWohp6kdg">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CjC50Bp2EeqvqeWohp6kdg" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_CjC50Rp2EeqvqeWohp6kdg" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_CjDg4Bp2EeqvqeWohp6kdg" name="système" type="_AW6WQBpyEeqvqeWohp6kdg" association="_CjCSwBp2EeqvqeWohp6kdg">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CjDg4Rp2EeqvqeWohp6kdg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CjDg4hp2EeqvqeWohp6kdg" value="1"/>
-      </ownedEnd>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_CjDg4xp2EeqvqeWohp6kdg" name="alfred" type="_2A4EoBpzEeqvqeWohp6kdg" association="_CjCSwBp2EeqvqeWohp6kdg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_Yo2K8BqEEeqvqeWohp6kdg" memberEnd="_Yo3ZEhqEEeqvqeWohp6kdg _Yo4nMRqEEeqvqeWohp6kdg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Yo3ZEBqEEeqvqeWohp6kdg" source="org.eclipse.papyrus">
@@ -172,6 +161,62 @@
         <nestedClassifier xmi:type="uml:Class" xmi:id="_BrHxUBqMEeqvqeWohp6kdg" name="air"/>
       </nestedClassifier>
     </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_HU7psBthEeqid8XKGmIByA" memberEnd="_HVK6QBthEeqid8XKGmIByA _HVMIYRthEeqid8XKGmIByA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HU_UEBthEeqid8XKGmIByA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HU_7IBthEeqid8XKGmIByA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_HVMIYRthEeqid8XKGmIByA" name="capteur" type="_AW6WQBpyEeqvqeWohp6kdg" association="_HU7psBthEeqid8XKGmIByA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_IDCs4BthEeqid8XKGmIByA" memberEnd="_IDDT8hthEeqid8XKGmIByA _IDD7AhthEeqid8XKGmIByA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IDDT8BthEeqid8XKGmIByA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_IDDT8RthEeqid8XKGmIByA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_IDD7AhthEeqid8XKGmIByA" name="systeme d'alfred" type="_2idyEBtgEeqid8XKGmIByA" association="_IDCs4BthEeqid8XKGmIByA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_L-G0QBthEeqid8XKGmIByA" memberEnd="_L-HbUhthEeqid8XKGmIByA _L-ICYBthEeqid8XKGmIByA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_L-HbUBthEeqid8XKGmIByA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_L-HbURthEeqid8XKGmIByA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_L-HbUhthEeqid8XKGmIByA" name="systeme d'alfred" type="_2idyEBtgEeqid8XKGmIByA" association="_L-G0QBthEeqid8XKGmIByA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_L-ICYBthEeqid8XKGmIByA" name="alfred" type="_2A4EoBpzEeqvqeWohp6kdg" association="_L-G0QBthEeqid8XKGmIByA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_P1BbcBthEeqid8XKGmIByA" name="System d'Alfred">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_X7yuQBthEeqid8XKGmIByA" name="Qualité de l'air" type="_AW6WQBpyEeqvqeWohp6kdg" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_YdKV8BthEeqid8XKGmIByA" name="ratio de consommation et production éléctrique" type="_AW6WQBpyEeqvqeWohp6kdg" aggregation="composite">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tmXkUBthEeqid8XKGmIByA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_Y9kUUBthEeqid8XKGmIByA" name="ratio de consommation et production énergetique" visibility="private" type="_AW6WQBpyEeqvqeWohp6kdg" aggregation="composite">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yplmkBthEeqid8XKGmIByA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_ZS318BthEeqid8XKGmIByA" name="Taux de COV" type="_AW6WQBpyEeqvqeWohp6kdg" aggregation="composite">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2bPTQBthEeqid8XKGmIByA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_Zn6R0BthEeqid8XKGmIByA" name="Taux d'humidité" type="_AW6WQBpyEeqvqeWohp6kdg" aggregation="composite">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ot3cBthEeqid8XKGmIByA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_Z8L4sBthEeqid8XKGmIByA" name="Taux de CO2" type="_AW6WQBpyEeqvqeWohp6kdg" aggregation="composite">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kIdfcBthEeqid8XKGmIByA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_6VzrYBthEeqid8XKGmIByA" name="traitement des donnée" visibility="public" type="_P1BbcBthEeqid8XKGmIByA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BGulkBtiEeqid8XKGmIByA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_KI-pMBtiEeqid8XKGmIByA" name="Ecran" type="_P1BbcBthEeqid8XKGmIByA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_AiTX8BtkEeqid8XKGmIByA" name="Salle de vie" type="_BVfvcBtkEeqid8XKGmIByA" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_DfRfYBtkEeqid8XKGmIByA" name="Cuisine" type="_DvgTwBtkEeqid8XKGmIByA" aggregation="composite"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_9MNQwBthEeqid8XKGmIByA" name="Traitement de données"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_KfpcwBtiEeqid8XKGmIByA" name="Actor1"/>
+    <packagedElement xmi:type="uml:InformationFlow" xmi:id="_QP3H4BtiEeqid8XKGmIByA" name=" " informationSource="_X7yuQBthEeqid8XKGmIByA" informationTarget="_6VzrYBthEeqid8XKGmIByA"/>
+    <packagedElement xmi:type="uml:InformationFlow" xmi:id="_RI4akBtiEeqid8XKGmIByA" name=" " informationSource="_YdKV8BthEeqid8XKGmIByA" informationTarget="_6VzrYBthEeqid8XKGmIByA"/>
+    <packagedElement xmi:type="uml:InformationFlow" xmi:id="_R1Up0BtiEeqid8XKGmIByA" name=" " informationSource="_Y9kUUBthEeqid8XKGmIByA" informationTarget="_6VzrYBthEeqid8XKGmIByA"/>
+    <packagedElement xmi:type="uml:InformationFlow" xmi:id="_SeeUgBtiEeqid8XKGmIByA" name=" " informationSource="_ZS318BthEeqid8XKGmIByA" informationTarget="_6VzrYBthEeqid8XKGmIByA"/>
+    <packagedElement xmi:type="uml:InformationFlow" xmi:id="_TRK8wBtiEeqid8XKGmIByA" name=" " informationSource="_Zn6R0BthEeqid8XKGmIByA" informationTarget="_6VzrYBthEeqid8XKGmIByA"/>
+    <packagedElement xmi:type="uml:InformationFlow" xmi:id="_T77J8BtiEeqid8XKGmIByA" name=" " informationSource="_Z8L4sBthEeqid8XKGmIByA" informationTarget="_6VzrYBthEeqid8XKGmIByA"/>
+    <packagedElement xmi:type="uml:InformationFlow" xmi:id="_UiTNcBtiEeqid8XKGmIByA" name=" " informationSource="_KI-pMBtiEeqid8XKGmIByA" informationTarget="_6VzrYBthEeqid8XKGmIByA"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_BVfvcBtkEeqid8XKGmIByA" name=""/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_DvgTwBtkEeqid8XKGmIByA" name="Block1"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_IYR1sBtkEeqid8XKGmIByA" client="_AiTX8BtkEeqid8XKGmIByA" supplier="_KI-pMBtiEeqid8XKGmIByA"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_JSgCQBtkEeqid8XKGmIByA" client="_DfRfYBtkEeqid8XKGmIByA" supplier="_KI-pMBtiEeqid8XKGmIByA"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_K8nj8BpiEeqvqeWohp6kdg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_K8oLABpiEeqvqeWohp6kdg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
@@ -252,4 +297,15 @@
   <Requirements:Requirement xmi:id="_CCRGABqMEeqvqeWohp6kdg" base_NamedElement="_CCMNgBqMEeqvqeWohp6kdg" id="8" text="réglage de l'aeration" base_Class="_CCMNgBqMEeqvqeWohp6kdg"/>
   <Requirements:Requirement xmi:id="_CVtmcBqMEeqvqeWohp6kdg" base_NamedElement="_CVpVABqMEeqvqeWohp6kdg" id="5" text="Mesure du taux d'humidité" base_Class="_CVpVABqMEeqvqeWohp6kdg"/>
   <Requirements:Requirement xmi:id="_CqwCUBqMEeqvqeWohp6kdg" base_NamedElement="_Cqp7sBqMEeqvqeWohp6kdg" id="6" text="réglage de la temperature" base_Class="_Cqp7sBqMEeqvqeWohp6kdg"/>
+  <Blocks:Block xmi:id="_2iwtABtgEeqid8XKGmIByA" base_Class="_2idyEBtgEeqid8XKGmIByA"/>
+  <Blocks:Block xmi:id="_P1IwMBthEeqid8XKGmIByA" base_Class="_P1BbcBthEeqid8XKGmIByA"/>
+  <PortsAndFlows:ItemFlow xmi:id="_QP8ncBtiEeqid8XKGmIByA" base_InformationFlow="_QP3H4BtiEeqid8XKGmIByA"/>
+  <PortsAndFlows:ItemFlow xmi:id="_RI8sABtiEeqid8XKGmIByA" base_InformationFlow="_RI4akBtiEeqid8XKGmIByA"/>
+  <PortsAndFlows:ItemFlow xmi:id="_R1YUMBtiEeqid8XKGmIByA" base_InformationFlow="_R1Up0BtiEeqid8XKGmIByA"/>
+  <PortsAndFlows:ItemFlow xmi:id="_Seil8BtiEeqid8XKGmIByA" base_InformationFlow="_SeeUgBtiEeqid8XKGmIByA"/>
+  <PortsAndFlows:ItemFlow xmi:id="_TRMx8BtiEeqid8XKGmIByA" base_InformationFlow="_TRK8wBtiEeqid8XKGmIByA"/>
+  <PortsAndFlows:ItemFlow xmi:id="_T7_bYBtiEeqid8XKGmIByA" base_InformationFlow="_T77J8BtiEeqid8XKGmIByA"/>
+  <PortsAndFlows:ItemFlow xmi:id="_UiW30BtiEeqid8XKGmIByA" base_InformationFlow="_UiTNcBtiEeqid8XKGmIByA"/>
+  <Blocks:Block xmi:id="_BVjZ0BtkEeqid8XKGmIByA" base_Class="_BVfvcBtkEeqid8XKGmIByA"/>
+  <Blocks:Block xmi:id="_DviwABtkEeqid8XKGmIByA" base_Class="_DvgTwBtkEeqid8XKGmIByA"/>
 </xmi:XMI>

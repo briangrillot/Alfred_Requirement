@@ -18,11 +18,15 @@ permettant respectivement de "regler la temperature" et "regler l'aération".
 
 ![Alt text](./img/Alfred_BDD.PNG)
 
-Pour ce diagramme on est parti d'un bloc representant le système souhaité ("Systeme"), ce block est composée
-des capteurs et des indicateurs. On a representé les elements dont on a besoin pour utiliser les indicateurs en tant que
-blocs (Electricité, Eau, Air, Température, etc...). Ensuite on sait que le Systeme est composée des ces elements, ce systeme
-calcule les données dont Alfred a besoin. Puis Alfred recupere les statistiques/indicateurs à partir du Systeme.
+Pour ce diagramme on est parti d'un bloc representant le système souhaité ("Systeme d'Alfred") qui as comme attribut des indicateurs, ce block est relié
+à un block "Capteur". On a representé les elements dont on a besoin pour utiliser les indicateurs en tant que
+blocs (Electricité, Eau, Air, Température, etc...), qui eux mêmes sont reliés au capteur. Ce systeme
+calcule les données dont Alfred a besoin. Puis Alfred recupere les statistiques/indicateurs qui s'affichent sur un ecran.
 
 ### Diagramme de bloc internes (IBD)
 
 ![Alt text](./img/Alfred_IBD.PNG)
+
+Dans ce diagramme on fait l'etude du block "Systéme d'Alfred" qui se trouve dans le BDD. On a voulu considerer
+les indicateurs qui étaient déjà passé par les capteurs afin d'obtenir les resultats voulus.
+Puis on traite ces données pour les afficher finalement sur un ecran, par example, dans la cuisine ou la salle de vie.
