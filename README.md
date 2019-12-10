@@ -25,3 +25,4 @@ calcule les données dont Alfred a besoin. Puis Alfred recupere les statistiques
 
 ### Diagramme de bloc internes (IBD)
 
+![Alt text](./img/Alfred_IBD.PNG)
